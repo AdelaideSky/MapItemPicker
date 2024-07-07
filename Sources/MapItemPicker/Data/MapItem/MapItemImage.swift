@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct MapItemImage: Identifiable, Equatable {
+struct MapItemImage: Identifiable, Equatable, Hashable {
     
     static func ==(lhs: MapItemImage, rhs: MapItemImage) -> Bool {
         lhs.url == rhs.url
